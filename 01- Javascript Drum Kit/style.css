@@ -3,21 +3,23 @@
   margin: 0;
   box-sizing: border-box;
 }
-.container {
+body {
   background-color: cadetblue;
-  height: 100vh;
+  height: 110vh;
   color: white;
 }
 .keys {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   flex: 1;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+  padding-top: 50px;
 }
 .key {
   border: 2px solid black;
+  text-align: center;
   border-radius: 5px;
   padding: 20px;
 }
@@ -27,9 +29,13 @@
   letter-spacing: 0.1rem;
   font-weight: bold;
 }
+kbd {
+  display: block;
+  font-size: 2rem;
+}
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: gray;
+  box-shadow: 0 0 1rem gray;
 }
